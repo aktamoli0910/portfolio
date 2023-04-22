@@ -1,11 +1,11 @@
 import React from 'react'
 import './portfolio.css'
 
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
+import IMG1 from '../../assets/portfolio1.png'
+import IMG2 from '../../assets/portfolio2.png'
+import IMG3 from '../../assets/portfolio3.png'
+import IMG4 from '../../assets/portfolio4.png'
+import IMG5 from '../../assets/portfolio5.jpg'
 import IMG6 from '../../assets/portfolio6.jpg'
 
 // DO NOT USE IMAGES IN PRODUCTION
@@ -14,52 +14,52 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto Currency Dashboard',
-    github: 'http://github.com',
+    title: 'Leetcode',
+    github: 'https://leetcode.com/aktamoli0910/',
     demo: 'https://dribbble.com/Alien_pixels'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Crypto Currency Dashboard',
-    github: 'http://github.com',
+    title: 'Codechef',
+    github: 'https://www.codechef.com/users/aktamoli0910',
     demo: 'https://dribbble.com/Alien_pixels'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Crypto Currency Dashboard',
-    github: 'http://github.com',
+    title: 'Github',
+    github: 'http://github.com/aktamoli0910',
     demo: 'https://dribbble.com/Alien_pixels'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Crypto Currency Dashboard',
-    github: 'http://github.com',
-    demo: 'https://dribbble.com/Alien_pixels'
+    title: 'JIIT Optica Website',
+    github: 'https://github.com/aktamoli0910/Fake-Product-Identifier',
+    demo: 'https://github.com/aktamoli0910/Jiit-Optica-Website'
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Crypto Currency Dashboard',
-    github: 'http://github.com',
-    demo: 'https://dribbble.com/Alien_pixels'
+    title: 'Fake Product Identifier',
+    github: 'https://github.com/aktamoli0910/Fake-Product-Identifier',
+    demo: 'https://github.com/aktamoli0910/Fake-Product-Identifier'
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Crypto Currency Dashboard',
-    github: 'http://github.com',
-    demo: 'https://dribbble.com/Alien_pixels'
+    title: 'Heal Fast',
+    github: 'https://github.com/aktamoli0910/Heal-Fast',
+    demo: 'https://github.com/aktamoli0910/Heal-Fast'
   },
 ]
 
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>My Activities</h5>
+      <h2>DSA and DEVELOPMENT</h2>
       
       <div className="container portfolio__container">
         {
@@ -71,8 +71,8 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn' rel='noreferrer' target='_blank'>GitHub</a>
-                  <a href={demo} className='btn btn-primary' rel='noreferrer' target='_blank'>Live Demo</a>
+                  <a href={github} className='btn' rel='noreferrer' target='_blank'>Link</a>
+                  {/* <a href={demo} className='btn btn-primary' rel='noreferrer' target='_blank'>Live Demo</a> */}
                 </div>
               </article>
             )
